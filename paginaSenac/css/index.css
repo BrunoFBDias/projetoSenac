@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color:#ffb347;
+    height: 100%;
+    width: 100%;
+}
+
+#fundo{
+    width: 100%;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    background-image: url(/imagens/saguaoSenac.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fundo h1{
+    position:relative;
+    width:100%;
+    margin: 0 40% 0 10px;
+    padding-top: 40px;
+    font-size: 40px;
+    color:aliceblue;
+    display: flex;
+    justify-content: end;
+}
+
+#corpo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 25px 0;
+}
+
+#corpo h1{
+    color:#2081f9;
+    font-size: 35px;
+    margin: 0 0 15px 0;
+}
