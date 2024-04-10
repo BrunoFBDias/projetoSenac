@@ -1,0 +1,21 @@
+.corpoCursos{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corpoCursos img{
+    max-width: 150px;
+}
+
+#cursoTDS img{
+    max-width: 250px;
+    max-height:auto;
+    width: 25%;
+}
+#cursoTDS p{
+    display:flex;
+    flex-direction: column;
+    
+}
