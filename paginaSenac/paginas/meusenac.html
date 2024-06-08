@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../css/aprendizado.css"/>
         <link rel="stylesheet" type="text/css" href="../css/localizacao.css"/>
         <link rel="stylesheet" type="text/css" href="../css/faleconosco.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/meusenac.css"/>
         <link rel="stylesheet" type="text/css" href="./css/cursos.css"/>
     </head>
 
@@ -34,8 +35,15 @@
             </nav>
         </header>
 
-        <div>
-            <img id="saguao" src="imagens/saguaoSenac.jpg" alt="saguao senac" />
+        <div class="formulario">
+            <form action="login.php" method="post">
+
+                <label for="login">Login:</label>
+                    <input type="text" id="login" name="login" required/>
+                
+                <label for="senha">Senha:</label>
+                    <input type="text" id="senha" name="senha" required/>
+            </form>
 
         </div>
         
