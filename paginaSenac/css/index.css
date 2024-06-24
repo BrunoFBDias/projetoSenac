@@ -41,39 +41,44 @@
 .gridAlunos{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: fit-content;
+    grid-template-rows: 350px;
     column-gap: 50px;
     row-gap: 10px;
 }
 
-#gridItem1 , #gridItem2 , #gridItem3 , #gridItem4 {
+.containersGrid {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 4% 0 4%;
 }
 
-#gridItem1 img, #gridItem2 img, #gridItem3 img, #gridItem4 img{
-    align-items: center;
-    justify-content: center;
+.imgGrid{
     width: 150px;
     border-radius: 100px;
+    justify-content: flex-start;
     border: 5px solid #2081f9;
 }
 
-.nomegrid1, .nomegrid2, .nomegrid3, .nomegrid4{
+.nomesGrid{
     font-size: 18px;
     font-weight: 700;
     text-align: center;
     color:white;
+    margin: 4%;
 }
 
-.textogrid1, .textogrid2, .textogrid3, .textogrid4{
+.textosgrid{
     font-size: 15px;
     font-weight: 350;
     color:white;
     text-align: center;
+    justify-content: center;
+    align-items: center;    
 }
+
 
 #corpo{
     display:flex;

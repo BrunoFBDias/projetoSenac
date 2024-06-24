@@ -12,8 +12,8 @@ body{
     background: linear-gradient(to bottom right, orange , royalblue);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 p, a, h1, h2, h3 {
@@ -27,7 +27,7 @@ p, a, h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:100%;
+    height:auto;
 }
 
 .formulario h1{
@@ -44,8 +44,7 @@ p, a, h1, h2, h3 {
 }
 
 .formulario form{
-    width:10%;
-    height:100%; 
+    width:10%;; 
 }
 
 .formulario input, select, textarea{
@@ -94,7 +93,6 @@ p, a, h1, h2, h3 {
     margin: 4%;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .botoes a {
@@ -110,3 +108,32 @@ p, a, h1, h2, h3 {
 
 /* Localização */
 
+#corpoLoc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textoLoc{
+    width:100%;
+    height: auto;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mapa { 
+    position: relative;
+    width: 100%; 
+    height: 0;        
+    padding-bottom: 56.25%; 
+}
+  
+#mapa iframe {
+    position: absolute;
+    margin: 0 5% 5% 5%;
+    width: 75vw;
+    height: 50vh;
+  }
