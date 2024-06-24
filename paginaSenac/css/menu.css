@@ -6,7 +6,7 @@
 
 header{
     display:flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
     background-color:#2081f9;
@@ -14,9 +14,8 @@ header{
 }
 
 #logo{
-    width: 100%;
-    height: auto;
-    margin: 2%;
+    max-width: 200px;
+    margin: 10%;
     background-color: transparent;
 }
 
@@ -42,7 +41,7 @@ header li:hover{
     background-color:  #accef8;
 }
 
-header li:hover a{
+header li:hover a, header li:hover p{
     color:#f99820;
 }
 
