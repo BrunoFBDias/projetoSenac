@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Senac Tech</title>
+        <link rel="stylesheet" type="text/css" href="../css/body.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+    </head>
+
+    <body><!--Abre o body-->
+        
+        <header>
+            <a href="../index.html"><img id="logo" src="/imagens/senacLogo.png" alt="Logo Senac"/></a>
+            <nav >
+                <ul class="links">
+                    <li class="dropdown">
+                        <a href="/paginas/cursos.html">Cursos</a>
+                        <ul id="conteudo">
+                            <li><a href="/paginas/cursoslivres.html">Cursos Livres</a></li>
+                            <li><a href="/paginas/cursostecnicos.html">Cursos Técnicos</a></li>
+                            <li><a href="/paginas/rsti.html">Programa RS TI</a></li>
+                        </ul>       
+                    </li>         
+
+                    <li><a href="/paginas/aprendizado.html">Aprendizado</a></li>
+                    <li><a href="/paginas/meusenac.html">Meu Senac</a></li>
+                    <li><a href="/paginas/localizacao.html">Localização</a></li>
+                    <li><a href="/paginas/faleconosco.html">Fale Conosco</a></li>
+                    </ul>
+            </nav>
+        </header>
+
+        <div class="formulario">
+            <form action="login.php" method="post">
+
+                <label for="login">Login:</label>
+                    <input type="text" id="login" name="login" required/>
+                
+                <label for="senha">Senha:</label>
+                    <input type="text" id="senha" name="senha" required/>
+            </form>
+
+        </div>
+        
+            
+    </body><!--Fecha o body-->
+</html>
