@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Seletor geral para o fundo das páginas */
+body{
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+
+    background: linear-gradient(to bottom right, orange , royalblue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    font-family: "Inter", sans-serif;
+}
+
+p, a, h1, h2, h3 {
+    font-family: "Inter", sans-serif;
+    color: aliceblue;
+}
+
+/* Formulários (Meu Senac, Fale Conosco) */
+.formulario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height:100%;
+}
+
+.formulario h1{
+    display: flex;
+    justify-content: center;
+
+    margin: 30px 0 30px 0;
+    
+    color:aliceblue;
+}
+
+.formulario label{
+    font-size: 22px;
+    font-weight: 500;
+    color:aliceblue;
+}
+
+.formulario form{
+    width:10%;
+    height:100%; 
+}
+
+.formulario input, select, textarea{
+    margin: 15px 0 15px 0;
+    padding: 5px;
+    
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-color: lightgray;
+}
+
+/* Aprendizado */
+
+#aprendiz{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+
+    width: 90%;
+    height: 100%;
+    margin: 0 3% 0 3%;
+}
+
+#tituloAprendiz{
+    width: 100%;
+    text-align: center;
+    font-size: 29;
+    margin: 4% 0 4% 0;
+    color: aliceblue;
+}
+
+#fotoAprendiz{
+    width: 50%;
+    max-height: 500px;
+    margin-right: 3%;
+}
+
+#textoAprendiz {
+    width: 50%;
+    font-size: 22px;
+    font-weight: 450;
+}
+
+#textoAprendiz p{
+    margin: 2% 0 2% 0;
+}
+
+@media (max-width : 768px){
+    #aprendiz{
+        flex-direction: column;
+    }
+
+    #textoAprendiz{
+        margin: 0 auto 0 auto;
+        width: 90%;
+        
+        text-align:center;
+        font-size: 18px;
+    }
+
+    #fotoAprendiz{
+        width: 85%;
+        margin: 0 auto 0 auto;
+    }
+ }
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+
+    margin: 4%;  
+}
+
+.botoes a {
+    padding: 15px;
+
+    background-color: royalblue;
+    border-radius: 30px;
+}  
+
+.botoes a:hover {
+    background-color:  #accef8;
+    color: royalblue;
+}
+
+/* Localização */
+
+#container__localizacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#textoLoc{
+    margin: 5% auto 5% auto;
+    text-align: center;
+}
+
+#mapa{
+    margin: 0 auto 5% auto;
+    width: 40%;
+}
+
+@media (max-width: 768px){
+    #mapa{
+       width: 200px;
+       height: auto;
+
+       margin: 25px;
+    }
+
+    #mapa iframe{
+        width: 450px;
+        height: 300px;
+    }
+
+    #fachadaSenac{
+        width: 400px;
+        height: auto;
+
+        margin: 25px;
+    }
+}
+
+/* Cursos Livres */
+
+/* Index */
+/* Fundo do  parágrafo sobre a história do Senac */
+.fundo{
+    display: flex;
+    flex-direction: column;
+
+    height: 30%;
+
+    background-image: url(/imagens/saguaoSenac.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* Dimensões e fonte do container interno do texto sobre a história do Senac*/
+.fundoConteudo{
+    width: 75%;
+    margin: 4%;
+}
+
+.fundoConteudo p{
+    margin: 2%;
+
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+/* Título da seção de depoimentos de alunos */
+#depoimentos {
+    width: 50%;
+    margin: 4%;
+
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Container do grid de alunos*/
+#alunos{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: flex-start;
+
+    width: 100%;
+
+}
+/* Grid de alunos */
+.gridAlunos{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: fit-content;
+    column-gap: 50px;
+    row-gap: 10px;
+}
+
+#gridItem1 , #gridItem2 , #gridItem3 , #gridItem4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#gridItem1 img, #gridItem2 img, #gridItem3 img, #gridItem4 img{
+    width: 150px;
+
+    border-radius: 100px;
+    border: 5px solid #2081f9;
+}
+
+.nomegrid1, .nomegrid2, .nomegrid3, .nomegrid4{
+    margin: 10px 0 10px 0;
+
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color:white;
+}
+
+.textogrid1, .textogrid2, .textogrid3, .textogrid4{
+    font-size: 15px;
+    font-weight: 350;
+    color:white;
+    text-align: center;
+}
+
+#corpo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 25px 0 25px 0;
+}
+
+#corpo h1{
+    font-size: 35px;
+    margin: 0 0 15px 0;
+}
+
+iframe{
+    margin:2%;
+}
+
+@media (max-width: 768px) {
+    .gridAlunos {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .fundoConteudo p{
+        font-size: 20px;
+        text-align: center;
+        margin-left: auto;
+    }
+
+
+}

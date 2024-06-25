@@ -1,0 +1,105 @@
+/* Define dimensões do cabeçalho e espaçamento dos itens filhos */
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-height: 200px;
+    
+    background-color:#2081f9;
+}
+
+/* Define dimensões do logo e posiciona no canto superior esquerdo*/
+#logo{
+    max-width: 150px;
+    height: auto;
+    margin: 3%;
+
+    background-color: transparent;
+}
+
+/* Define dimensões do menu de cabeçalho e posicionamento dos links*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define formato e estilo dos links de navegação */
+header nav li{
+    padding: 10px 20px 10px;
+    margin: 15px;
+    border-radius: 100px;
+    
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    
+    transition: 0.3s ease;
+}
+
+header li:hover{
+    background-color:  #accef8;
+}
+
+header li:hover a{
+    color:#f99820;
+}
+
+header a{
+    text-decoration: none;   
+    transition: 0.3s ease;
+}
+
+header ul {
+    display:flex;
+    justify-content: space-between;
+}
+
+#conteudo{
+    display:none;
+    position:absolute;
+
+    margin-top: 10px;
+    padding: 10px;
+    
+    list-style:none;
+    border-radius: 10px;
+    background-color: #2081f9;
+
+    transition: 0.2 ease;
+}
+
+#conteudo li{
+    width:90%;
+    border-radius: 5px;
+}
+
+.dropdown:hover li{
+    color: #f99820;
+}
+.dropdown:hover #conteudo{
+    display:block;
+}
+.dropdown #conteudo a:hover {
+    color:#f99820;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
