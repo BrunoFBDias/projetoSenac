@@ -33,13 +33,11 @@ p, a, ul, h1, h2, h3 {
     align-items: center;
     justify-content: center;
 
-    height:100vh;
+    margin:auto;
 }
 
 /* Estilização para o título da página faleconosco.html */
 .formulario h1{
-    display: flex;
-    justify-content: center;
 
     margin: 30px 0 30px 0;
     
@@ -56,7 +54,7 @@ p, a, ul, h1, h2, h3 {
 /* Define o tamanho dos campos dos formulários */
 .formulario form{
     width:10%;
-    height:100%; 
+
 }
 
 .formulario input, select, textarea{
@@ -357,7 +355,11 @@ iframe{
         font-size: 20px;
         font-weight: 350;
         text-align: center;
-        
+    }
+
+    .fundoConteudo iframe{
+        width:90%;
+        margin: 1%;
     }
 }
 
@@ -369,8 +371,10 @@ iframe{
     justify-content: center;
     align-items: center;
 
-    width: 80%;
-    height: 100vh;
+    width: 60%;
+    height: 60%;
+
+    background-color: lightgray;
 }
 
 #container__cursoslivres h1{
@@ -396,29 +400,32 @@ iframe{
     display: flex;
     align-items: center;
 
-    height: 300px;
-    width: 90%;
+    height: 25%px;
+    width: 92%;
     margin: 5% auto 5% auto;
+
     border-radius: 15px;
     background-color: #2081f9;
 }
 
 .cardCursos h1 {
     font-size: 25px;
-    margin: 2%
+    margin: 2%;
 }
 
 .cardCursos img{
     height: 100%;
     width: 35%;
+
+    object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
 
 .cardCursos p{
-    max-width: 90%;
-    margin: 2% 0 0 2%;
+    max-width: 97%;
+    margin: 2% 3% 0 3%;
 
-    font-size: 15px;
+    font-size: 115%;
     text-align: justify;
 }
 
@@ -437,5 +444,5 @@ iframe{
     justify-self: flex-start;
     align-self: flex-end;
 
-    margin: 2% 0 0 2%;
+    margin: 2%;
 }
